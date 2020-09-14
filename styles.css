@@ -71,7 +71,7 @@ body {
   font-size: 120px;
   color: #72005F;
 }
-@media all and (max-width:420px){
+@media all and (max-width:640px){
   .main-index {
     flex-direction: column-reverse;
     max-width: 420px;
