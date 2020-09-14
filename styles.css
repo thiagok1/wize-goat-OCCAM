@@ -71,7 +71,36 @@ body {
   font-size: 120px;
   color: #72005F;
 }
+@media all and (max-width:420px){
+  .main-index {
+    flex-direction: column-reverse;
+    max-width: 420px;
+    justify-content: center;
+    height: min-content;
+  }
 
+  .image-index {
+    height: 240px;
+    margin-top: 60px;
+  }
+  .section-index {
+    height: auto;
+    margin-top: 60px;
+  }
+  .title-up-index{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .title-down-index{
+    font-size: 64px;
+  }
+
+  .button-index{
+    height: 40px;
+    font-size: 16px;
+  }
+}
 /* Advice page styles */
 
 .centralizer {
