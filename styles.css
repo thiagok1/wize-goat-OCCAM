@@ -28,18 +28,20 @@ body {
   height: 600px;
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
-  animation-iteration-count: infinite;
 }
 
 .button-index {
+  display:flex;
   padding: 5px 10px;
   border: 0;
   border-radius: 10px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
   background: #72005F;
   color: #fff;
   font-size: 32px;
   font-weight: bold;
-
   transition: background 0.2s;
   cursor: pointer;
 }
@@ -61,11 +63,13 @@ body {
 }
 
 .title-up-index {
-  /* TODO styles title up */
+  font-size: 40px;
+  color: #BAA193;
 }
 
 .title-down-index {
-  /* TODO styles title down */
+  font-size: 120px;
+  color: #72005F;
 }
 
 /* Advice page styles */
@@ -138,13 +142,24 @@ body {
 
 .message-advice-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .message-up-advice {
-  /* TODO styles */
+  font-size: 40px;
+  color: #630253;
 }
 
 .message-down-advice {
-  /* TODO styles */
+  display:flex;
+  font-size: 32px;
+  justify-content: center;
+  color: #BAA193;
+  margin-top: 40px;
+}
+.message-advice-content strong{
+  font-size: 40px;
+  color: #630253;
 }

@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  
-  <!-- TODO import font -->  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Wise Goat - Advice</title>
 </head>
 <body>
@@ -16,8 +15,8 @@
     </a>
     <div class="main-advice">
         <section class="message-advice-content">
-          <strong id="advice-message" class="message-up-advice"></strong>
-          <strong class="message-down-advice">-Goat</strong>
+          <strong  id="advice-message" class="message-up-advice" ></strong>
+          <strong class="message-down-advice">- Goat</strong>
         </section>
       
       <img class="image-advice" src="http://placegoat.com/600/600" alt="Bodezinho">
@@ -34,12 +33,11 @@
       promessa.then(function(response) {
         response.json().then(function(data) {
           
-          console.log(data.slip.advice)
-          
           var texto = data.slip.advice;
           
           var element = document.getElementById('advice-message');
-          // TODO adicionar na tag html com insertAdjacentHTML('afterbegin', texto)
+
+          element.insertAdjacentHTML('afterbegin', texto);
         })
       });
 
